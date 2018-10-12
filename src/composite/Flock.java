@@ -12,6 +12,10 @@ public class Flock {
     }
 
     public void allQuack() {
+        if (!quackableCreatures.isEmpty()) {
+            quackableCreatures.get(0).quack();
+            quackableCreatures.get(0).quack();
+        }
         quackableCreatures.forEach(Quackable::quack);
     }
 }
